@@ -99,7 +99,7 @@ pytz==2020.1
 pyviz==0.10.3
 pyviz-comms==0.7.6
 PyWavelets==1.1.1
-pywin32==227
+
 pywinpty==0.5.7
 PyYAML==5.3.1
 pyzmq==19.0.1
