@@ -1,4 +1,4 @@
-argon2-cffi @ file:///C:/ci/argon2-cffi_1596828549974/work
+
 attrs==19.3.0
 backcall==0.2.0
 bit==0.6.0
