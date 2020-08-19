@@ -1,4 +1,10 @@
 # initial imports
+
+from dotenv import load_dotenv
+load_dotenv()
+from pathlib import Path  # Python 3.6+ only
+env_path = Path('.') / '.env'
+load_dotenv(dotenv_path=env_path)
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -7,10 +13,11 @@ import panel as pn
 import plotly.express as px
 from pathlib import Path
 
+
 # Initialize the Panel Extensions (for Plotly)
 pn.extension('plotly')
 # Read the Mapbox API key
-mapbox_token = os.getenv("mapbox")
+mapbox= os.getenv('mapbox_token')
 
 
 # Import the CSVs to Pandas DataFrames
@@ -120,7 +127,7 @@ def neighborhood_map():
     df_neighborhood_locations.index.names = ['neighborhood']
     avg= df.groupby([df['neighborhood']]).mean()
     combined = pd.concat([df_neighborhood_locations,avg], axis="columns", join="inner")
-    mapbox = os.getenv("MAPBOX_API_KEY")
+    mapbox= os.getenv('mapbox_token')
     px.set_mapbox_access_token(mapbox)
     
     map_plot=px.scatter_mapbox(combined,
@@ -135,6 +142,7 @@ def neighborhood_map():
     # YOUR CODE HERE!
 
 welcome = pn.Column(
+    "### Janet Cheung's Dashboard",
     "### This dashboard presents a visual analysis of historical prices of house units, sale price per square foot and gross rent in San Francisco, California from 2010 to 2016. You can navigate through the tabs above to explore more details about the evolution of the real estate market on The Golden City across these years",
     neighborhood_map())
 
