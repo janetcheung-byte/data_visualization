@@ -1,0 +1,3 @@
+export mapbox_token="pk.eyJ1IjoiamFuZXRjaGV1bmciLCJhIjoiY2sxM20zNWQ0MGEwMjNucGtpenlvM2gwNSJ9.8-WkDau8sOgVrzPhN8bMcg"
+
+
