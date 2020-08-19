@@ -13,7 +13,7 @@ click==7.1.2
 cloudpickle==1.5.0
 coincurve==13.0.0
 colorama==0.4.3
-colorcet==1.0.0
+colorcet==2.0.2
 conda==4.8.4
 conda-package-handling==1.7.0
 cryptography==3.0
