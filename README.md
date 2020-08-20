@@ -1,3 +1,6 @@
+## <Click this link to see full dashboard>[https://janetcheung-byte.github.io/data_visualization/]
+
+
 # How to run the dashboard
 # 1)Execute Panel dashboard using servable function
 
