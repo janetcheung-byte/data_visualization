@@ -1,4 +1,4 @@
-## Click this link to see full dashboard <Click this link to see full dashboard>[https://janetcheung-byte.github.io/data_visualization/]
+## Click this link to see full dashboard <Click this link to see full dashboard>https://janetcheung-byte.github.io/data_visualization/
 
 
 # How to run the dashboard
